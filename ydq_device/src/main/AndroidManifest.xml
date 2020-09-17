@@ -1,0 +1,567 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.conagra">
+
+
+    <uses-permission android:name="com.company.app.fileprovider.READ" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!--获取联系人信息，demo中演示发送通讯录消息-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 控制振动器 -->
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!--获取联系人信息，demo中演示发送通讯录消息-->
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- ⼩米 配置开始 < -->
+    <!--<permission-->
+    <!--android:name="com.dieke.feldsher.permission.MIPUSH_RECEIVE"-->
+    <!--android:protectionLevel="signature" />-->
+    <!--<uses-permission android:name="com.dieke.feldsher.permission.MIPUSH_RECEIVE" />-->
+    <!--&lt;!&ndash; ⼩米 配置结束 < &ndash;&gt;-->
+    <!--&lt;!&ndash; GCM 配置开始 < &ndash;&gt;-->
+    <!--<permission-->
+    <!--android:name="com.dieke.feldsher.permission.C2D_MESSAGE"-->
+    <!--android:protectionLevel="signature" />-->
+    <!--<uses-permission android:name="com.dieke.feldsher.permission.C2D_MESSAGE" />-->
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--&lt;!&ndash;机型自适应&ndash;&gt;-->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+     <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity
+            android:name=".hardware.activity.JkgjActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.BloodSugarListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.BluetoothLeAccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.BloodSugarActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".hardware.activity.BloodFatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.ScanSppBluetoothActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.ScanBleBluetoothActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".hardware.activity.FetalHeartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.TempleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.BloodPressureListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.BloodSugarKnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.FetalMoveKnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.VideoPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.TempleListActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="a33ec6edbf02b6dcc0867fb5845e10f6"></meta-data>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.conagra.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name=".hardware.activity.BloodPressureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hardware.activity.PlayerActivity"
+            android:label="康家"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".hardware.activity.FetalMoveListActivity"
+            android:screenOrientation="portrait">
+
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+       <activity
+            android:name=".hardware.activity.BloodSugarDetailActivity"
+            android:screenOrientation="portrait">
+
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".hardware.activity.FetalMoveActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name="com.pgyersdk.activity.FeedbackActivity" />
+        <activity
+            android:name=".hardware.activity.HeartActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".hardware.activity.HeartListActivity"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!-- 注册服务 -->
+        <service android:name=".mvp.service.PlayerService">
+            <intent-filter>
+                <action android:name="com.conagra.MUSIC_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!--第三方推送的权限 广播 服务 配置结束-->
+        <service android:name=".hardware.equipment.BluetoothEquipment"></service>
+        <service
+            android:name=".mvp.service.BluetoothLeServiceGlucose"
+            android:enabled="true"></service>
+        <service
+            android:name=".iknetbluetoothlibrary.BluetoothService"
+            android:enabled="true"></service>
+
+        <service
+            android:name=".mvp.service.BluetoothLeService"
+            android:enabled="true"></service>
+        <service
+            android:name=".mvp.service.UpdataService"
+            android:enabled="true"></service>
+        <service android:name=".mvp.service.VerificationCodeService"></service>
+        <service android:name=".mvp.service.CountDownService"></service>
+        <service
+            android:name=".hardware.mcSdk.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".mvp.ui.activity.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.conagra"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<data-->
+                    <!--android:host="com.conagra"-->
+                    <!--android:path="/conversationlist"-->
+                    <!--android:scheme="rong" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!--会话列表-->
+        <activity
+            android:name=".mvp.ui.activity.ConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.conagra"
+                    android:path="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" />
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+
+        <!--<meta-data-->
+        <!--android:name="RONG_CLOUD_APP_KEY"-->
+        <!--android:value="3argexb63mp9e" />-->
+
+        <!-- 正式 n19jmcy59f1q9  测试 p5tvi9dst25b4  小乔 e0x9wycfx7flq-->
+
+        <!--end rongcloud-->
+
+        <!-- 请将CHANNAL改为app的发布渠道 < -->
+        <meta-data
+            android:name="InstallChannel"
+            android:value="app" />
+
+        <!-- 高德地图-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e09af6a2b26c02086e9216bd07c960ae" />
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="577b2b55e0f55afbcb0026c6" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="RongCloudApp" />
+
+
+        <!--第三方的推送 权限 广播 和服务-->
+
+        <!-- 小米 配置开始 < -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+        <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入-->
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!--注：此service必须在3.0.1版本以后（包括3.0.1版本）加入-->
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="io.rong.push.platform.MiMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <!-- 小米 配置结束 < -->
+        <!-- HMS 配置开始-->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="10535759" />
+
+        <!-- BridgeActivity定义了HMS-SDK中一些跳转所需要的透明页面-->
+        <activity
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <!-- 解决华为移动服务升级问题的透明界面（必须声明）-->
+        <activity
+            android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <!--<provider-->
+            <!--android:name="com.huawei.hms.update.provider.UpdateProvider"-->
+            <!--android:authorities="cn.rongcloud.im.hms.update.provider"-->
+            <!--android:exported="false"-->
+            <!--android:grantUriPermissions="true"></provider>-->
+        <!-- 第三方相关 :接收Push消息（注册、Push消息、Push连接状态）广播 -->
+        <receiver android:name="io.rong.push.platform.HMSReceiver">
+            <intent-filter>
+                <!-- 必须,用于接收token -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 -->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要 -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+
+                <!-- 接收通道发来的通知栏消息，兼容老版本Push -->
+                <action android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+        <!-- HMS 配置结束-->
+
+
+
+
+        <!--&lt;!&ndash; 华为 配置开始 < &ndash;&gt;-->
+        <!--<receiver-->
+            <!--android:name="com.huawei.android.pushagent.PushEventReceiver"-->
+            <!--android:process=":hwpushservice">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL" />-->
+                <!--<action android:name="com.huawei.intent.action.PUSH" />-->
+                <!--<action android:name="com.huawei.intent.action.PUSH_ON" />-->
+                <!--<action android:name="com.huawei.android.push.PLUGIN" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+
+                <!--<data android:scheme="package" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+            <!--android:name="com.huawei.android.pushagent.PushBootReceiver"-->
+            <!--android:process=":hwpushservice">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.huawei.android.push.intent.REGISTER" />-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+            <!--</intent-filter>-->
+            <!--<meta-data-->
+                <!--android:name="CS_cloud_version"-->
+                <!--android:value="\u0032\u0037\u0030\u0035" />-->
+        <!--</receiver>-->
+        <!--<receiver android:name="io.rong.push.platform.HWReceiver">-->
+            <!--<intent-filter>-->
+                <!--&lt;!&ndash; 必须,用于接收token&ndash;&gt;-->
+                <!--<action android:name="com.huawei.android.push.intent.REGISTRATION" />-->
+                <!--&lt;!&ndash; 必须，用于接收消息&ndash;&gt;-->
+                <!--<action android:name="com.huawei.android.push.intent.RECEIVE" />-->
+                <!--&lt;!&ndash; 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调&ndash;&gt;-->
+                <!--<action android:name="com.huawei.android.push.intent.CLICK" />-->
+                <!--&lt;!&ndash; 可选，查看push通道是否连接，不查看则不需要&ndash;&gt;-->
+                <!--<action android:name="com.huawei.intent.action.PUSH_STATE" />-->
+                <!--&lt;!&ndash; 可选，标签、地理位置上报回应，不上报则不需要 &ndash;&gt;-->
+                <!--<action android:name="com.huawei.android.push.plugin.RESPONSE" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service-->
+            <!--android:name="com.huawei.android.pushagent.PushService"-->
+            <!--android:process=":hwpushservice"></service>-->
+
+        <activity android:name=".hardware.activity.BloodPressureDetailActivity" />
+
+        <!-- 华为 配置结束 < -->
+
+        <!-- GCM 配置 < -->
+        <receiver
+        android:name="com.google.android.gms.gcm.GcmReceiver"
+        android:exported="true"
+        android:permission="com.google.android.c2dm.permission.SEND">
+        <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="com.conagra" />
+        <!-- 替换为自己的packagename < -->
+        </intent-filter>
+        </receiver>
+        <receiver
+            android:exported="true"
+            android:name=".receiver.MessageNotificationReceiver">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="io.rong.push.platform.RongGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="io.rong.push.platform.RongGCMInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- GCM 配置结束 < -->
+
+        <!--第三方推送的权限 广播 服务 配置结束-->
+
+
+        <!--<meta-data-->
+        <!--android:name="RONG_CLOUD_APP_KEY"-->
+        <!--android:value="k51hidwqkc6zb" />-->
+
+
+    </application>
+
+</manifest>

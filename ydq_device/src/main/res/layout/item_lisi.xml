@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lisi_ll"
+    android:clickable="true"
+    android:layout_marginBottom="3px"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_margin="20px"
+        android:src="@drawable/quickening_footg"/>
+
+    <LinearLayout
+        android:layout_width="300px"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lisi_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-10-14"
+            android:textColor="@color/black"
+            android:textSize="46px"/>
+
+        <TextView
+            android:id="@+id/lisi_num"
+            android:layout_marginTop="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="胎动  24次"
+            android:textColor="@color/color_text1"
+            android:textSize="40px"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/lisi_jt"
+            android:layout_alignParentRight="true"
+            android:layout_width="32px"
+            android:layout_height="42px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/mine_jjt"/>
+
+        <TextView
+            android:id="@+id/lisi_status"
+            android:layout_below="@+id/lisi_jt"
+            android:layout_marginTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="危险异常"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPick"
+            android:textSize="40px"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

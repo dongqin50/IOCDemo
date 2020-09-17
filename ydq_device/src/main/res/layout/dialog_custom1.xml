@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/raw_dialog_bg"
+        android:layout_width="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/dialog1_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dialog1_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="46px"
+                android:gravity="center"
+                android:textColor="@color/raw_dialog_message"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_below="@+id/dialog1_message"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@color/custom_bg"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog1_show"
+            android:clickable="true"
+            android:layout_below="@+id/dialog1_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/dialog1_show_content"
+                android:layout_marginLeft="120px"
+                android:layout_marginRight="120px"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="知道了"
+                android:textSize="46px"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dialog1_choose"
+            android:layout_below="@+id/dialog1_content"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/dialog1_vline"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@color/raw_dialog_line" />
+
+            <RelativeLayout
+                android:id="@+id/dialog1_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_toLeftOf="@+id/dialog1_vline">
+                <TextView
+                    android:id="@+id/negativeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/raw_dialog_cancle"
+                    android:text="取消"
+                    android:textSize="46px"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dialog1_sure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_toRightOf="@+id/dialog1_vline">
+                <TextView
+                    android:id="@+id/positiveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="确定"
+                    android:textSize="46px"
+                    android:gravity="center"
+                    android:textColor="@color/colorMain"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</layout>

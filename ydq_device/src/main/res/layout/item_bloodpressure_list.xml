@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bloodpressure_list_ll"
+    android:clickable="true"
+    android:gravity="center"
+    android:layout_marginTop="3px"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_margin="20px"
+        android:src="@drawable/jkgj_jkgj_xy2"/>
+
+    <LinearLayout
+        android:layout_width="470px"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bloodpressure_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-10-14 18:39:24"
+            android:textColor="@color/black"
+            android:textSize="46px"/>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="血压:"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+
+
+            <TextView
+                android:id="@+id/bloodpressure_list_xy_num"
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70/110"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+            
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心率:"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+
+
+            <TextView
+                android:id="@+id/bloodpressure_list_xl_num"
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--次"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+
+
+
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+      
+        <TextView
+            android:id="@+id/bloodpressure_list_status"
+            android:layout_below="@+id/bloodpressure_list_jt"
+            android:layout_marginTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="脉压差增大"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPick"
+            android:textSize="36px"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

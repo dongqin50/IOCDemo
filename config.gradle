@@ -1,0 +1,82 @@
+ext {
+    daggerVersion = '2.8'
+    supportVersion = '27.0.0'
+    supportLibaryVersion = '28.0.0'
+    rxJavaVersion = '2.0.2'
+    rxAndroidVersion = '2.0.1'
+    javaxAnnotationVersion = '1.0'
+    glideVersion = '4.5.0'
+    retrofitVersion = '2.1.0'
+    multidexVersion = '1.0.1'
+    gsonVersion = '2.3.1'
+    getuiVersion = '2.10.2.0'
+    rxbindingVersion = '2.0.0'
+    logging_interceptorVersion = '3.4.1'
+    zxing_version = '3.3.0'
+    permission_version = '2.4.0'
+    baseRecyclerViewAdapter_version='2.9.28'
+    pgyersdk='2.7.6'
+    presentationDependencies = [
+            daggerCompiler:             "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:                     "com.google.dagger:dagger:${daggerVersion}",
+            rxJava:                     "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid:                  "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:            "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            supportV4:                  "com.android.support:support-v4:${supportLibaryVersion}",
+            appcompatV7:                "com.android.support:appcompat-v7:${supportLibaryVersion}",
+            annotations:                "com.android.support:support-annotations:${supportVersion}",
+            design:                     "com.android.support:design:${supportVersion}",
+            glide:                      "com.github.bumptech.glide:glide:${glideVersion}",
+            glideTransformations:       "jp.wasabeef:glide-transformations:2.0.1",
+            retrofit:                   "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofit2Gson:              "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofit2Adapter:           "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+            multidex:                   "com.android.support:multidex:${multidexVersion}",
+            gson:                       "com.google.code.gson:gson:${gsonVersion}",
+            rxbinding:                  "com.jakewharton.rxbinding2:rxbinding:${rxbindingVersion}",
+            pinyin4j:                   "com.belerweb:pinyin4j:2.5.1",
+            okhttpLoggingInterceptor:   "com.squareup.okhttp3:logging-interceptor:${logging_interceptorVersion}",
+            zxing:                      "com.google.zxing:core:${zxing_version}",
+            permission:                 "com.github.hotchemi:permissionsdispatcher:${permission_version}",
+            permissionProcessor:        "com.github.hotchemi:permissionsdispatcher-processor:${permission_version}",
+//            reactNative:                "com.facebook.react:react-native:+",
+            pgyersdk:                   "com.pgyersdk:sdk:${pgyersdk}",
+            baseRecyclerViewAdapter:    "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerViewAdapter_version}"
+    ]
+
+    dbflow_version = "4.0.0-beta5"
+    gtm_version = '9.2.1'
+    localytics_version = '3.8.0'
+    dataDependencies = [
+            dataBaseCore:       "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}",
+            dataBase:           "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}",
+            processor:          "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}",
+            gtm:                "com.google.android.gms:play-services-tagmanager:${gtm_version}",
+    ]
+
+    flexbox_version = "0.3.0-alpha2"
+    circularReveal_version = "2.0.1"
+    rebound_version = "0.3.8"
+    emoji_version = "1.0.0"
+    materialdialog_version = "0.8.6.2"
+    materialDesignLibrary_version = "1.6"
+    uiDependencies = [
+            flexbox:                "com.google.android:flexbox:${flexbox_version}",
+            cardview:               "com.android.support:cardview-v7:${supportVersion}",
+            snackBar:               "com.github.SwiftyWang:TopToastBar:1.1.4",
+            circularreveal:         "com.github.ozodrukh:CircularReveal:${circularReveal_version}@aar",
+            rebound:                "com.facebook.rebound:rebound:${rebound_version}",
+            emoji:                  "com.github.w446108264:AndroidEmoji:${emoji_version}",
+            materialDialogs:        "com.afollestad.material-dialogs:core:${materialdialog_version}",
+            pickerview:             "com.bigkoo:pickerview:2.0.8",
+            activityTransition:     "com.kogitune:pre-lollipop-activity-transition:1.3.0",
+            materialDesignLibrary:  "com.github.vajro:MaterialDesignLibrary:${materialDesignLibrary_version}",
+            downloadProgressBar:    "com.github.panwrona:DownloadProgressBar:1.1",
+            swipeRecyclerview:      "com.yanzhenjie:recyclerview-swipe:1.0.2",
+            recyclerviewAnimators:  "jp.wasabeef:recyclerview-animators:2.2.5",
+            topsnackbar:            "com.androidadvance:topsnackbar:1.1.1"
+    ]
+
+    test=" ---------------- config.gradle"
+
+}

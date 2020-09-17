@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="168px"
+    android:layout_height="168px"
+    android:background="@drawable/rec_white_black_rightbottom1">
+
+        <RelativeLayout
+            android:id="@+id/ysjjItem3_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1px"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+
+            android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/ysjjItem3_tv"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/ysjj_text1"
+                    android:textSize="36px"
+                    android:text="专家14元"/>
+        </RelativeLayout>
+
+
+</RelativeLayout></layout>

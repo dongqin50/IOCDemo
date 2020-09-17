@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--&lt;!&ndash; The most prominent text color.  &ndash;&gt;-->
+    <!--<attr name="textColorPrimary" format="reference|color" />-->
+    <!--&lt;!&ndash; Color of text (usually same as colorForeground). &ndash;&gt;-->
+    <!--<attr name="textColor" format="reference|color" />-->
+
+    <!--&lt;!&ndash; Color of highlighted text. &ndash;&gt;-->
+    <!--<attr name="textColorHighlight" format="reference|color" />-->
+
+    <!--&lt;!&ndash; Color of hint text (displayed when the field is empty). &ndash;&gt;-->
+    <!--<attr name="textColorHint" format="reference|color" />-->
+
+    <!--&lt;!&ndash; Color of link text (URLs). &ndash;&gt;-->
+    <!--<attr name="textColorLink" format="reference|color" />-->
+
+    <!--&lt;!&ndash; Reference to a drawable that will be drawn under the insertion cursor. &ndash;&gt;-->
+    <!--<attr name="textCursorDrawable" format="reference" />-->
+
+    <!--&lt;!&ndash; Indicates that the content of a non-editable TextView can be selected.-->
+     <!--Default value is false. EditText content is always selectable. &ndash;&gt;-->
+    <!--<attr name="textIsSelectable" format="boolean" />-->
+</resources>

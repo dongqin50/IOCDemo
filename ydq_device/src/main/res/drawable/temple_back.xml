@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<solid android:color="@android:color/transparent"/>-->
+            <!--<size android:width="80px" android:height="90px"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <item android:width="46px" android:height="56px">
+        <bitmap android:src="@drawable/back_ico2"/>
+    </item>
+</layer-list>

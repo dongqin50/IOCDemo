@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30px"
+    android:layout_width="match_parent"
+    android:layout_height="260px"
+    android:gravity="center_vertical"
+    android:background="@android:color/transparent">
+    
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="10px"
+        android:layout_width="200px"
+        android:layout_height="200px">
+        
+        <TextView
+            android:id="@+id/heartrecord_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:text="0周"
+            android:textColor="@color/colorMain"
+            android:textSize="20sp"/>
+        
+        <RelativeLayout
+            android:layout_marginTop="20px"
+            android:layout_width="160px"
+            android:layout_height="50px"
+            android:background="@drawable/rec_white_con20">
+            
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:src="@drawable/circle_item3"/>
+            
+            <TextView
+                android:id="@+id/heartrecord_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/black"
+                android:text="+7天"
+                android:layout_marginRight="10px"/>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/heartrecord_item_ll"
+        android:layout_marginRight="20px"
+        android:layout_weight="1"
+        android:layout_marginLeft="20px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rec_white_corner12">
+        
+        <ImageView
+            android:id="@+id/heartrecord_iv"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/jkgj_jkgj_tx"/>
+        
+      <LinearLayout
+          android:layout_alignTop="@id/heartrecord_iv"
+          android:id="@+id/heartrecord_sc_ll"
+          android:layout_toRightOf="@id/heartrecord_iv"
+          android:layout_marginLeft="36px"
+          android:layout_marginTop="14px"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_height="60px">
+          
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="40px"
+              android:text="胎心时长:"
+              android:textColor="@color/colorPick_Dark"/>
+          <TextView
+              android:id="@+id/heartrecord_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20px"
+              android:textSize="40px"
+              android:text="01:39"
+              android:textColor="@color/colorPick_Dark"/>
+          
+          
+      </LinearLayout>
+        <LinearLayout
+            android:id="@+id/heartrecord_xl_ll"
+            android:layout_below="@id/heartrecord_sc_ll"
+          android:layout_toRightOf="@id/heartrecord_iv"
+          android:layout_marginLeft="36px"
+            android:layout_marginTop="6px"
+          android:gravity="center_vertical"
+          android:layout_width="match_parent"
+          android:layout_height="60px">
+          
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="平均心率:"
+              android:textSize="40px"
+              android:textColor="@color/colorPick_Dark"/>
+          <TextView
+              android:id="@+id/heartrecord_bpm"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20px"
+              android:textSize="40px"
+              android:text="135"
+              android:textColor="@color/colorPick_Dark"/>
+      </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/heartrecord_td_ll"-->
+            <!--android:layout_below="@id/heartrecord_xl_ll"-->
+            <!--android:layout_toRightOf="@id/heartrecord_iv"-->
+            <!--android:layout_marginLeft="36px"-->
+            <!--android:visibility="gone"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60px">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="胎动次数:"-->
+                <!--android:textSize="40px"-->
+                <!--android:textColor="@color/colorPick_Dark"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/heartrecord_td"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20px"-->
+                <!--android:textSize="40px"-->
+                <!--android:text="10"-->
+                <!--android:textColor="@color/colorPick_Dark"/>-->
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/heartrecord_line"
+            android:layout_margin="20px"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_below="@id/heartrecord_iv"
+            android:src="@color/color_line1"/>
+
+        <TextView
+            android:id="@+id/heartrecord_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:text="2016-09-28 16:00:00"
+            android:textSize="36px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/heartrecord_line"
+            android:textColor="@color/ysjj_big_text1"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout></layout>

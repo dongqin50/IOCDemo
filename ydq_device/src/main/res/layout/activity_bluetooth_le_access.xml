@@ -1,0 +1,123 @@
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/accesslinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorMain">
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:id="@+id/access_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已配对的设备"
+                android:padding="20px"
+                android:textColor="@color/white"
+                android:textSize="40px"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/access_ypp_rv"
+                android:paddingLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未配对的设备"
+                android:padding="20px"
+                android:textColor="@color/white"
+                android:textSize="40px"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:background="@color/white"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/access_wpp_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.conagra.hardware.widget.BluetoothSearchDrawable
+        android:id="@+id/access_bt_scan"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="200px"
+        android:layout_marginBottom="140px"/>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_below="@id/access_list_ll"-->
+        <!--android:id = "@+id/layoutmain"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical" >-->
+    <!--</LinearLayout>-->
+
+   <!---->
+    <!--<LinearLayout-->
+        <!--android:layout_below="@id/access_list_ll"-->
+        <!--android:id="@+id/bottombutton"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="扫描" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="链接" />-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RuleView">
+        <attr name="ruleScaleColor" format="color"/>
+        <attr name="ruleOrientation" format="integer"/>
+        <attr name="ruleBackgroundColor" format="color"/>
+    </declare-styleable>
+
+</resources>

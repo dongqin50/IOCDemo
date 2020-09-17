@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/icon1_selected"
+    android:clickable="true"
+    android:layout_height="241px"
+    android:background="@drawable/rec_white_bottom_1">
+
+    <TextView
+        android:id="@+id/icon1_add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_width="32px"
+        android:layout_height="61px"
+        android:background="@drawable/knowledge_jt"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/icon1_iv"
+        android:layout_width="153px"
+        android:layout_height="153px"
+        android:layout_marginLeft="35px"/>
+
+
+    <!--android:src="@drawable/jkgj_jkgj_ny"-->
+
+    <TextView
+        android:id="@+id/icon1_title"
+        android:layout_toRightOf="@id/icon1_iv"
+        android:layout_marginLeft="41px"
+        android:layout_marginTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorMain"
+        android:textSize="46px"/>
+
+    <TextView
+        android:id="@+id/icon1_status"
+        android:layout_toRightOf="@id/icon1_title"
+        android:layout_marginLeft="53px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"
+        android:layout_alignTop="@id/icon1_title"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="36px"/>
+
+    <TextView
+        android:id="@+id/icon1_content"
+        android:layout_below="@id/icon1_title"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/icon1_iv"
+        android:layout_marginLeft="41px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/monitor_text1"
+        android:textSize="36px"/>
+
+
+</RelativeLayout></layout>

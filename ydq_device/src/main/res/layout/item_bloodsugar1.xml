@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDrak">
+
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+    <!--android:id="@+id/bloodsugar1_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/bloodsugar1_bt_down"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:text="向下滑动"
+        android:gravity="center"
+        android:textSize="32px"
+        android:drawableLeft="@drawable/quickening_downarrowg"
+        android:textColor="@color/quickening_text1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/bloodsugar1_left"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/quickening2_left_jt"
+                    android:textColor="@color/color_text1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bloodsugar1_time_rl"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginRight="10px"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80px"
+                        android:layout_height="60px"
+                        android:src="@drawable/canlender_tubiao"/>
+                    <TextView
+                        android:id="@+id/bloodsugar1_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-20"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bloodsugar1_right"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="40px"
+                    android:textColor="@color/color_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quickening2_right_jt"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:src="@color/colorDrak"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="500px">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/bloodsugar1_rl111"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/bloodsugar1_sw_tv111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="早餐前"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_tv_zcq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px"
+                            android:layout_centerHorizontal="true"
+                            android:text="早餐后"
+                            android:textSize="46px"
+                            android:textColor="@color/quickening_text1"/>
+
+                        <TextView
+                            android:layout_marginTop="10px"
+                            android:id="@+id/bloodsugar1_tv_zch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="- -"
+                            android:textSize="70px"
+                            android:textColor="@color/colorMain"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_pg1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30px"
+                        android:text="偏高"
+                        android:visibility="gone"
+                        android:background="@drawable/circle_item2"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/bloodsugar1_rl2"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/bloodsugar1_xw_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20px"
+                            android:layout_centerHorizontal="true"
+                            android:text="午餐前"
+                            android:textSize="46px"
+                            android:textColor="@color/quickening_text1"/>
+                        <TextView
+                            android:id="@+id/bloodsugar1_tv_wcq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="- -"
+                            android:textSize="70px"
+                            android:textColor="@color/colorMain"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_pg2"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30px"
+                        android:text="偏高"
+                        android:visibility="gone"
+                        android:background="@drawable/circle_item2"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/bloodsugar1_rl3"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_ws_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="午餐后"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_tv_wch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10px"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/bloodsugar1_pg3"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:text="偏高"
+                    android:visibility="gone"
+                    android:background="@drawable/circle_item2"/>
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:src="@color/colorDrak"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/bloodsugar1_rl11"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_sw_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="晚餐前"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_tv_wscq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10px"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/bloodsugar1_pg4"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30px"
+                        android:text="偏高"
+                        android:visibility="gone"
+                        android:background="@drawable/circle_item2"/>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/bloodsugar1_rl21"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_xw_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="晚餐后"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_tv_wsch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:layout_marginTop="10px"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/bloodsugar1_pg5"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30px"
+                        android:text="偏高"
+                        android:visibility="gone"
+                        android:background="@drawable/circle_item2"/>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/bloodsugar1_rl1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="睡觉前"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_tv_sq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/bloodsugar1_pg6"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:text="偏高"
+                    android:visibility="gone"
+                    android:background="@drawable/circle_item2"/>
+            </RelativeLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <LinearLayout
+                    android:id="@+id/bloodsugar1_rl31"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bloodsugar1_ws_tv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20px"
+                        android:text=""
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+                    <TextView
+                        android:id="@+id/bloodsugar1_ws_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/colorDrak"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/item_bloodsugar1"
+            android:textColor="@color/quickening_text1"
+            android:textSize="11sp"
+            android:layout_marginLeft="28px"
+            android:layout_marginRight="28px"
+            android:layout_marginTop="28px" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测量时间范围：6:00~11:00是早餐测量时间；11:00~17:00是午餐测量时间；17:00~21:00是晚餐测量时间；19:00~24:00是睡前测量时间"
+            android:textColor="@color/quickening_text1"
+            android:textSize="11sp"
+            android:layout_marginLeft="28px"
+            android:layout_marginRight="28px"
+            android:layout_marginBottom="28px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.conagra.hardware.widget.BloodSugarView1
+            android:id="@+id/bloodsugar1_view"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="早餐前"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color1"
+                android:textColor="@color/quickening_text1"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="早餐后"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color2"
+                android:textColor="@color/quickening_text1"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="午餐前"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color3"
+                android:textColor="@color/quickening_text1"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="午餐后"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color4"
+                android:textColor="@color/quickening_text1"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="晚餐前"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color5"
+                android:textColor="@color/quickening_text1"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="晚餐后"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color6"
+                android:textColor="@color/quickening_text1"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="睡觉前"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawablePadding="10px"
+                android:drawableTop="@drawable/circle_sugar1_color7"
+                android:textColor="@color/quickening_text1"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout></layout>

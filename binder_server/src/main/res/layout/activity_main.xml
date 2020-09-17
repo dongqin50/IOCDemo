@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zy.binder_server.MainActivity">
+
+    <!-- view for AdMob Interstitial Ad -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/interstitial_ad_sample"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start_level"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/next_level_button"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_below="@id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next_level" />
+
+    <Button
+        android:id="@+id/testTask"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/next_level_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="多任务测试" />
+
+    <Button
+        android:id="@+id/startBroadcast"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/testTask"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="startBroadcastTask"
+        android:text="开启广播" />
+</RelativeLayout>

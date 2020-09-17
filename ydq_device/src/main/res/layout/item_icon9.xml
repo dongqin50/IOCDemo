@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="174px"
+    android:gravity="center_vertical"
+    android:background="@drawable/rec_white_bottom_1">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/icon9_iv"
+        android:layout_width="102px"
+        android:layout_height="102px"
+        android:layout_marginLeft="35px"
+        android:src="@drawable/jkgj_jkgj_ny"/>
+
+    <TextView
+        android:id="@+id/icon9_title"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/icon9_iv"
+        android:layout_marginLeft="35px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="尿液"
+        android:textColor="@android:color/black"
+        android:textSize="42px"/>
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/icon9_add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_gravity="center_vertical|right"
+        android:text="添加"
+        android:textSize="36px"
+        android:layout_width="170px"
+        android:layout_height="95px"
+        android:background="@drawable/bg_selector3"/>
+
+</RelativeLayout></layout>

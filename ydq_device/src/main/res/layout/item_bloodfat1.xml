@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_marginTop="260px"
+        android:layout_width="match_parent"
+        android:layout_height="800px">
+
+        <com.conagra.hardware.widget.BloodFatView
+            android:id="@+id/item_bloodpressure1_view1"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="80px"
+            android:layout_centerHorizontal="true"
+            android:layout_width="500px"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="40px"
+                android:layout_weight="1"
+                android:layout_marginTop="20px"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHOL"
+                    android:textSize="36px"
+                    android:textColor="@color/bloodfat1_color1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(胆固醇)"
+                    android:textSize="30px"
+                    android:textColor="@color/bloodfat1_color2"/>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:layout_width="300px"
+                    android:layout_height="140px">
+
+                    <EditText
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorMain"
+                        android:textSize="40px"
+                        android:textColorHint="@color/bloodfat1_color4"
+                        android:hint="0"/>
+                    <TextView
+                        android:layout_width="90px"
+                        android:layout_height="55px"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="输入"
+                        android:textSize="32px"
+                        android:background="@drawable/rec_green_corners12"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="100px"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_width="500px"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginRight="20px"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LDL"
+                            android:textSize="40px"
+                            android:textColor="@color/bloodfat1_color1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(低密度脂蛋白)"
+                            android:textSize="30px"
+                            android:textColor="@color/bloodfat1_color2"/>
+                        <TextView
+                            android:alpha="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="42px"
+                            android:textColor="@color/colorMain"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20px"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/item_bloodfat1"
+                            android:textSize="40px"
+                            android:textColor="@color/bloodfat1_color1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HDL"
+                            android:textSize="40px"
+                            android:textColor="@color/bloodfat1_color1"/>
+                        <TextView
+                            android:alpha="0.5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="42px"
+                            android:textColor="@color/colorMain"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="80px"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="20px"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HDL"
+                    android:textSize="36px"
+                    android:textColor="@color/bloodfat1_color1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_height="wrap_content"
+                    android:text="(高密度脂蛋白)"
+                    android:textSize="30px"
+                    android:textColor="@color/bloodfat1_color2"/>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:layout_width="300px"
+                    android:layout_height="140px">
+
+                    <EditText
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorMain"
+                        android:textSize="40px"
+                        android:textColorHint="@color/bloodfat1_color4"
+                        android:hint="0"/>
+                    <TextView
+                        android:layout_width="90px"
+                        android:layout_height="55px"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="输入"
+                        android:layout_marginBottom="10px"
+                        android:textSize="30px"
+                        android:background="@drawable/rec_green_corners12"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="20px"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRIG"
+                    android:textSize="36px"
+                    android:textColor="@color/bloodfat1_color1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(甘油三脂)"
+                    android:textSize="30px"
+                    android:textColor="@color/bloodfat1_color2"/>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:alpha="0.5"
+                    android:gravity="center"
+                    android:layout_width="300px"
+                    android:layout_height="140px">
+
+                    <EditText
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorMain"
+                        android:textSize="40px"
+                        android:textColorHint="@color/bloodfat1_color4"
+                        android:hint="0"/>
+                    <TextView
+                        android:layout_width="90px"
+                        android:layout_height="55px"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="输入"
+                        android:textSize="32px"
+                        android:background="@drawable/rec_green_corners12"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/quickening1_bt_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:drawableTop="@drawable/quickening_uparrowg"
+            android:text="向上滑动查看曲线图"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="32px"
+            android:layout_marginTop="20px"
+            android:textColor="@color/quickening_text1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_above="@id/quickening1_bt_up"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:text="保存"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_selector3"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</layout>

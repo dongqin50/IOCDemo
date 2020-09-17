@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDrak">
+
+        <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+            <!--android:id="@+id/bloodfat_header"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<android.support.v7.widget.SimpleSwipeRefreshLayout-->
+        <!--android:id="@+id/swipe_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bloodfat_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--</android.support.v7.widget.SimpleSwipeRefreshLayout>-->
+
+
+    </LinearLayout>
+</layout>

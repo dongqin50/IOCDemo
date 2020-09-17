@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDrak">
+
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+    <!--android:id="@+id/boodfat2_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/boodfat2_bt_down"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:text="向下滑动"
+        android:gravity="center"
+        android:textSize="32px"
+        android:drawableLeft="@drawable/quickening_downarrowg"
+        android:textColor="@color/quickening_text1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/boodfat2_left"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/quickening2_left_jt"
+                    android:textColor="@color/color_text1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/boodfat2_time_rl"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginRight="10px"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80px"
+                        android:layout_height="60px"
+                        android:src="@drawable/canlender_tubiao"/>
+                    <TextView
+                        android:id="@+id/boodfat2_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-20"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/boodfat2_right"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="40px"
+                    android:textColor="@color/color_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quickening2_right_jt"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:src="@color/colorDrak"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="500px">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/boodfat2_rl111"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/boodfat2_sw_tv111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:gravity="center"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="甘油三酯(TRIG)"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                    <TextView
+                        android:id="@+id/boodfat2_sw_tv211"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+
+                <LinearLayout
+                    android:id="@+id/boodfat2_rl2"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/boodfat2_xw_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="胆固醇(CHOL)"
+                        android:gravity="center"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+                    <TextView
+                        android:id="@+id/boodfat2_xw_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <LinearLayout
+                    android:id="@+id/boodfat2_rl3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="高密度脂蛋白(HDL)"
+                        android:gravity="center"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+
+                    <TextView
+                        android:id="@+id/boodfat2_ws_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:src="@color/colorDrak"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/boodfat2_rl11"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/boodfat2_sw_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:gravity="center"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="低密度脂蛋白(LDL)"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                    <TextView
+                        android:id="@+id/boodfat2_sw_tv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+                <LinearLayout
+                    android:id="@+id/boodfat2_rl21"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/boodfat2_xw_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100px"
+                        android:gravity="center"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text="CHOL/HDL"
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+
+                    <TextView
+                        android:id="@+id/boodfat2_xw_tv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="- -"
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:src="@color/colorDrak"/>
+
+                <LinearLayout
+                    android:id="@+id/boodfat2_rl31"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/boodfat2_ws_tv21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20px"
+                        android:text=""
+                        android:textSize="70px"
+                        android:textColor="@color/colorMain"/>
+                    <TextView
+                        android:id="@+id/boodfat2_ws_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textSize="46px"
+                        android:textColor="@color/quickening_text1"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/colorDrak"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正常范围：CHOL:2.80~5.98mmol/L HDL:0.90~1.55mmol/L   TRIG:0.56~1.70mmol/L LDL:0~3.1mmol/L"
+            android:textColor="@color/quickening_text1"
+            android:layout_margin="28px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.conagra.hardware.widget.BloodFatView1
+            android:id="@+id/boodfat2_view"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="30px"
+            android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHOL"
+                    android:gravity="center"
+                    android:textSize="30px"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/fat_ox"
+                    android:textColor="@color/quickening_text1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HDL"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:textSize="30px"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/quickening_graphr"
+                    android:textColor="@color/quickening_text1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIRG"
+                    android:textSize="30px"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/fat_lx"
+                    android:textColor="@color/quickening_text1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LDL"
+                    android:textSize="30px"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/quickening_grapho"
+                    android:textColor="@color/quickening_text1"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHOL/HDL"
+                    android:layout_marginLeft="20px"
+                    android:textSize="30px"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/fat_bx"
+                    android:textColor="@color/quickening_text1"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

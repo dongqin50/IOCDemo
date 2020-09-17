@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDrak">
+
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+    <!--android:id="@+id/bloodpressure2_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/bloodpressure2_bt_down"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:text="向下滑动"
+        android:gravity="center"
+        android:textSize="32px"
+        android:drawableLeft="@drawable/quickening_downarrowg"
+        android:textColor="@color/quickening_text1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/bloodpressure2_left"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/quickening2_left_jt"
+                    android:textColor="@color/color_text1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bloodpressure2_time_rl"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginRight="10px"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80px"
+                        android:layout_height="60px"
+                        android:src="@drawable/canlender_tubiao"/>
+                    <TextView
+                        android:id="@+id/bloodpressure2_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-20"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bloodpressure2_right"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="40px"
+                    android:textColor="@color/color_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quickening2_right_jt"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:src="@color/colorDrak"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300px">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/bloodpressure2_rl1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bloodpressure2_ssy_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="- -"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+
+                <TextView
+                    android:layout_below="@id/bloodpressure2_ssy_tv"
+                    android:id="@+id/bloodpressure2_sw_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_centerHorizontal="true"
+                    android:text="收缩压"
+                    android:textSize="46px"
+                    android:textColor="@color/quickening_text1"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:src="@color/colorDrak"/>
+            <LinearLayout
+                android:id="@+id/bloodpressure2_rl2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bloodpressure2_szy_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="- -"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+
+                <TextView
+                    android:id="@+id/bloodpressure2_xw_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_centerHorizontal="true"
+                    android:text="舒张压"
+                    android:textSize="46px"
+                    android:textColor="@color/quickening_text1"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:src="@color/colorDrak"/>
+            <LinearLayout
+                android:id="@+id/bloodpressure2_rl3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bloodpressure2_xl_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="- -"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+                <TextView
+                    android:id="@+id/bloodpressure2_ws_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_centerHorizontal="true"
+                    android:text="心率"
+                    android:textSize="46px"
+                    android:textColor="@color/quickening_text1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/colorDrak"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正常范围：收缩压90-139mmHg;舒张压：60-89mmHg"
+            android:textColor="@color/quickening_text1"
+            android:layout_margin="38px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.conagra.hardware.widget.BloodPressureView2
+            android:id="@+id/bloodpressure2_view"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收缩压"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawableLeft="@drawable/quickening_graphr"
+                android:textColor="@color/quickening_text1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:textSize="30px"
+                android:gravity="center"
+                android:text="舒张压"
+                android:drawableLeft="@drawable/quickening_grapho"
+                android:textColor="@color/quickening_text1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout></layout>

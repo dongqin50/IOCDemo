@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+        <!--android:id="@+id/bs_knowledge_header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="304px"
+                android:background="@drawable/bloodsugar_knowledge_bg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="血糖一天可监测7次，检查时间依次为："
+                    android:textColor="@color/line_color9"
+                    android:textSize="44px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="① 早餐前空腹监测      ② 早餐后2小时监测"
+                    android:textColor="@color/color_text1"
+                    android:textSize="44px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="③ 午餐前监测   ④ 午餐后2小时监测   ⑤ 晚餐前监测"
+                    android:textColor="@color/color_text1"
+                    android:textSize="44px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"/>
+                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⑥ 晚餐后2小时监测        ⑦ 晚上10点监测"
+                    android:textColor="@color/color_text1"
+                    android:textSize="44px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="30px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/color_text1"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="特别提醒"
+                        android:textColor="@color/line_color9"
+                        android:textSize="44px"
+                        android:layout_marginTop="10px"
+                        android:layout_marginBottom="10px"/>
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/color_text1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="这里说的餐后2小时不是指吃完饭2小时，而是从吃第一口饭开始计算的2小时。对一般糖尿病病人来说，每周中只要有2～3天测7次/天， 其余时间每天测一个空腹，一个餐后就可以了。\n临床以静脉抽血的血糖值为标准，病人自己在家监测时可以对照比较。血糖仪测的血糖值 与抽取静脉血测的血糖值相差一般在15％以内，建议病人应在相对长时间内使用同一个血糖仪，以保证监测的相对准确。"
+                    android:textColor="@color/color_text1"
+                    android:textSize="44px"
+                    android:layout_marginBottom="10px"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+</layout>

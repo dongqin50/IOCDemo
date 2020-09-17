@@ -1,0 +1,3 @@
+include ':app', ':inject', ':inject_annotation', ':inject_compile', ':plugin', ':skin_update', ':hook_login', ':jnitest', ':lib_arithmetic',
+        ':binder_server', ':binder_client1', ':hook_login_advanced', ':zyfiction', ':dagger',
+        ':base_widget', ':ydq_device', ':taopiaopiao', ':plugincore', ':skin_update_skin', ':base_core', ':MyUtils',  ':blelibrary'

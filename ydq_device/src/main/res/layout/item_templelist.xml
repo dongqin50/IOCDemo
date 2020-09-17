@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="180px"
+    android:layout_margin="15px"
+    android:background="@drawable/rec_white_corner12">
+
+    <ImageView
+        android:layout_marginLeft="20px"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:src="@drawable/jkgj_jkgj_tw"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="40px"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/templelist_time"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-10-12 17:00:00"
+            android:textSize="44px"
+            android:textColor="@color/ks_text1"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体温"
+                android:textSize="44px"
+                android:textColor="@color/ks_text1"/>
+            <TextView
+                android:id="@+id/templelist_wd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="40℃"
+                android:textSize="44px"
+                android:textColor="@color/ks_text1"/>
+
+            <TextView
+                android:id="@+id/templelist_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="正常"
+                android:textSize="44px"
+                android:textColor="@color/ks_text1"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout></layout>

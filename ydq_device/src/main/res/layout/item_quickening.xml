@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.conagra.hardware.widget.UpDownViewLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_quickening_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<View-->
+        <!--android:id="@+id/item_quickening_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorPick"/>-->
+
+    </com.conagra.hardware.widget.UpDownViewLinearLayout>
+</layout>

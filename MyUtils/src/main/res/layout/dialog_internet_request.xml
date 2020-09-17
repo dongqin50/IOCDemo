@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="465px"
+        android:layout_height="329px"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:background="@drawable/dialog_request_bg">
+
+        <ImageView
+            android:layout_marginTop="40px"
+            android:id="@+id/dialog_request_iv"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dialog_request_error"/>
+
+        <TextView
+            android:id="@+id/dialog_request_tv"
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:layout_below="@id/dialog_request_iv"
+            android:layout_centerHorizontal="true"
+            android:textSize="40px"
+            android:textColor="@android:color/white"
+            android:text="网络请求超时"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</layout>

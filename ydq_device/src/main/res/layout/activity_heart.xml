@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain">
+
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+        <!--android:id="@+id/heart_header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:layout_marginTop="107px"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="请选择连接方式"
+        android:paddingLeft="70px"
+        android:textStyle="bold"
+        android:textSize="46px"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="418px"
+                android:layout_height="418px">
+                <ImageView
+                    android:id="@+id/heart_youxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="40px"
+                    android:src="@drawable/ljsb_yxlj"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="33px"
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有线连接"
+                android:textStyle="bold"
+                android:textSize="46px"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.conagra.hardware.widget.BluetoothSearchDrawable
+                android:id="@+id/heart_broadcast"
+                android:layout_width="418px"
+                android:layout_height="418px"/>
+
+            <!--<ImageView-->
+                <!--android:layout_width="338px"-->
+                <!--android:layout_height="338px"-->
+                <!--android:src="@drawable/ljsb_lylj"/>-->
+            <TextView
+                android:layout_marginTop="33px"
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙连接"
+                android:textStyle="bold"
+                android:textSize="46px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/heart_sv"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/heart_rv"
+                android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="600px"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/heart_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/heart_ll"
+            android:orientation="vertical"
+            android:layout_marginBottom="34px"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingLeft="93px"
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:text="请确保设备开机,并根据个人习惯选择连接方式:"/>
+            <TextView
+                android:textSize="36px"
+                android:layout_marginTop="10px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1,有线连接:请点击有线连接插入音频线"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:textSize="36px"
+                android:text="2,蓝牙连接:点击蓝牙连接按钮搜素蓝牙连接设备"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_above="@id/heart_ll"
+            android:layout_marginBottom="64px"
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:src="@android:color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MyUtils" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base_core" />
+            <option value="$PROJECT_DIR$/base_widget" />
+            <option value="$PROJECT_DIR$/binder_client1" />
+            <option value="$PROJECT_DIR$/binder_server" />
+            <option value="$PROJECT_DIR$/blelibrary" />
+            <option value="$PROJECT_DIR$/dagger" />
+            <option value="$PROJECT_DIR$/hook_login" />
+            <option value="$PROJECT_DIR$/hook_login_advanced" />
+            <option value="$PROJECT_DIR$/inject" />
+            <option value="$PROJECT_DIR$/inject_annotation" />
+            <option value="$PROJECT_DIR$/inject_compile" />
+            <option value="$PROJECT_DIR$/jnitest" />
+            <option value="$PROJECT_DIR$/lib_arithmetic" />
+            <option value="$PROJECT_DIR$/plugin" />
+            <option value="$PROJECT_DIR$/plugincore" />
+            <option value="$PROJECT_DIR$/skin_update" />
+            <option value="$PROJECT_DIR$/skin_update_skin" />
+            <option value="$PROJECT_DIR$/taopiaopiao" />
+            <option value="$PROJECT_DIR$/ydq_device" />
+            <option value="$PROJECT_DIR$/zyfiction" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

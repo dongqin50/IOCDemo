@@ -1,0 +1,78 @@
+//apply plugin: groovy
+def isMoudle = rootProject.ext.isMoudle
+//apply plugin: 'com.android.library'
+if(isMoudle){
+    apply plugin: 'com.android.library'
+}else{
+    apply plugin: 'com.android.application'
+    apply plugin:'com.zy.plugin.aspectj'
+}
+
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        if(!isMoudle){
+            applicationId rootProject.ext.skin_update_app_id
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions{
+            annotationProcessorOptions{
+                arguments = [moudleName: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    if(!isMoudle){
+        sourceSets{
+            main{
+                println('-------------------sourceSets--------------------------')
+                manifest.srcFile 'src/main/test/AndroidManifest.xml'
+                println('-------------------sourceSets-:' + manifest.srcFile)
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'org.aspectj:aspectjrt:1.9.3'
+//    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+}
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+repositories {
+    mavenCentral()
+}
+//// AspectJ
+//aspectj {
+//    disableWhenDebug true
+//    javartNeeded true
+//// 排除不需要AOP扫描的包
+//    exclude group: 'xxxx', module: 'xxxx'
+//    compileOptions {
+//        defaultJavaVersion = JavaVersion.VERSION_1_7
+//    }
+//}

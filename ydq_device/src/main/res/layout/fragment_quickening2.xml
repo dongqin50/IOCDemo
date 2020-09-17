@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDrak">
+
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+    <!--android:id="@+id/quickening2_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/quickening2_bt_down"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:text="现向下滑动返回监测"
+        android:gravity="center"
+        android:textSize="32px"
+        android:drawableLeft="@drawable/quickening_downarrowg"
+        android:textColor="@color/quickening_text1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/quickening2_left"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/quickening2_left_jt"
+                    android:textColor="@color/color_text1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/quickening2_time_rl"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginRight="10px"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80px"
+                        android:layout_height="60px"
+                        android:src="@drawable/canlender_tubiao"/>
+                    <TextView
+                        android:id="@+id/quickening2_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-20"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quickening2_right"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="40px"
+                    android:textColor="@color/color_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quickening2_right_jt"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:src="@color/colorDrak"/>
+
+        <RelativeLayout
+            android:paddingLeft="30px"
+            android:layout_marginTop="40px"
+            android:paddingRight="30px"
+            android:layout_width="match_parent"
+            android:layout_height="260px">
+
+            <TextView
+                android:id="@+id/quickening2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/quickening_text1"
+                android:text="12小时胎动估算结果"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/quickening2_current_time"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/quickening_text1"-->
+                <!--android:text="2016-09-12"/>-->
+            <RelativeLayout
+                android:layout_below="@id/quickening2_tv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/quickening2_iv"
+                    android:layout_width="140px"
+                    android:layout_height="140px"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/quickening_footh"/>
+
+                <TextView
+                    android:id="@+id/quickening2_time"
+                    android:layout_toRightOf="@id/quickening2_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40px"
+                    android:text="0"
+                    android:layout_marginBottom="40px"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+                <TextView
+                    android:layout_toRightOf="@id/quickening2_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginBottom="50px"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="40px"
+                    android:textColor="@color/colorMain"/>
+
+                <TextView
+                    android:id="@+id/quickening2_tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_gravity="right"
+                    android:textSize="40px"
+                    android:textColor="@color/quickening_text1"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:src="@color/colorDrak"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:id="@+id/quickening2_rl1"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/quickening2_sw_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_centerHorizontal="true"
+                    android:text="上午"
+                    android:textSize="50px"
+                    android:textColor="@color/quickening_text1"/>
+                <TextView
+                    android:id="@+id/quickening2_sw_tv2"
+                    android:layout_below="@id/quickening2_sw_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="- -"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+                <TextView
+                    android:layout_toRightOf="@id/quickening2_sw_tv2"
+                    android:layout_alignBottom="@id/quickening2_sw_tv2"
+                    android:id="@+id/quickening2_sw_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:textSize="45px"
+                    android:text="次"
+                    android:textColor="@color/quickening_text1"/>
+
+                <ImageView
+                    android:id="@+id/quickening2_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:src="@color/colorPick"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:src="@color/colorDrak"/>
+            <RelativeLayout
+                android:id="@+id/quickening2_rl2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/quickening2_xw_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_centerHorizontal="true"
+                    android:text="下午"
+                    android:textSize="50px"
+                    android:textColor="@color/quickening_text1"/>
+                <TextView
+                    android:id="@+id/quickening2_xw_tv2"
+                    android:layout_below="@id/quickening2_xw_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="- -"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+                <TextView
+                    android:layout_toRightOf="@id/quickening2_xw_tv2"
+                    android:layout_alignBottom="@id/quickening2_xw_tv2"
+                    android:id="@+id/quickening2_xw_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次"
+                    android:layout_marginLeft="10px"
+                    android:textSize="45px"
+                    android:textColor="@color/quickening_text1"/>
+                <ImageView
+                    android:id="@+id/quickening2_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:src="@color/colorPick"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:src="@color/colorDrak"/>
+            <RelativeLayout
+                android:id="@+id/quickening2_rl3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/quickening2_ws_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_centerHorizontal="true"
+                    android:text="晚上"
+                    android:textSize="50px"
+                    android:textColor="@color/quickening_text1"/>
+                <TextView
+                    android:id="@+id/quickening2_ws_tv2"
+                    android:layout_below="@id/quickening2_ws_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="- -"
+                    android:textSize="70px"
+                    android:textColor="@color/colorMain"/>
+                <TextView
+                    android:layout_toRightOf="@id/quickening2_ws_tv2"
+                    android:layout_alignBottom="@id/quickening2_ws_tv2"
+                    android:id="@+id/quickening2_ws_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:textSize="45px"
+                    android:text="次"
+                    android:textColor="@color/quickening_text1"/>
+                <ImageView
+                    android:id="@+id/quickening2_line3"
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:src="@color/colorPick"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.conagra.hardware.widget.LineTimePointView
+            android:id="@+id/quickening2_line_point"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <!--<com.dieke.feldsher.widget.BGABannerView-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/quickening2_bga"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:banner_pageChangeDuration="1000"-->
+            <!--app:banner_pointAutoPlayAble="false"-->
+            <!--app:banner_pointContainerBackground="@android:color/transparent"-->
+            <!--app:banner_pointDrawable="@drawable/appstart_select"-->
+            <!--app:banner_pointTopBottomMargin="15dp"-->
+            <!--app:banner_transitionEffect="fade"/>-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/quickening2_rv"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/quickening2_vp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <com.conagra.hardware.widget.QuickeningView
+            android:id="@+id/quickening2_view"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12小时胎动次数"
+                android:textSize="30px"
+                android:gravity="center"
+                android:drawableLeft="@drawable/quickening_graphr"
+                android:textColor="@color/quickening_text1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:textSize="30px"
+                android:gravity="center"
+                android:text="单次胎动次数"
+                android:drawableLeft="@drawable/quickening_grapho"
+                android:textColor="@color/quickening_text1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingBottom="40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:textSize="30px"
+            android:text="上午9:00-11:00,下午14:00-16:00,晚上21:00-23:00测量时间为每日最佳,每日3次,每小时1次"
+            android:textColor="@color/quickening_text1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

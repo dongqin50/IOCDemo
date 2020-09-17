@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDrak">
+
+    <!--<com.dieke.feldsher.widget.TempleHeaderView-->
+    <!--android:id="@+id/temple2_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <TextView
+        android:id="@+id/temple2_bt_down"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:text="向下滑动"
+        android:gravity="center"
+        android:textSize="32px"
+        android:drawableLeft="@drawable/quickening_downarrowg"
+        android:textColor="@color/quickening_text1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/temple2_left"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingRight="40px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/quickening2_left_jt"
+                    android:textColor="@color/color_text1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/temple2_time_rl"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginRight="10px"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80px"
+                        android:layout_height="60px"
+                        android:src="@drawable/canlender_tubiao"/>
+                    <TextView
+                        android:id="@+id/temple2_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-10-20"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorMain"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/temple2_right"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingLeft="40px"
+                    android:textColor="@color/color_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quickening2_right_jt"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:src="@color/colorDrak"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+                <TextView
+                    android:id="@+id/temple2_ws_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="10px"
+                    android:layout_centerVertical="true"
+                    android:text="体温"
+                    android:textSize="50px"
+                    android:textColor="@color/temple2_color1"/>
+
+                <LinearLayout
+                    android:id="@+id/temple2_pg"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="30px"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:src="@drawable/tem_high_ico"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="10px"
+                        android:layout_centerVertical="true"
+                        android:text="偏高"
+                        android:textSize="42px"
+                        android:textColor="@color/red"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20px"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80px"
+                    android:layout_height="150px"
+                    android:layout_marginLeft="40px"
+                    android:src="@drawable/temple_tem"/>
+
+                <TextView
+                    android:id="@+id/temple2_wd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="0.0"
+                    android:textColor="@color/colorMain"
+                    android:textSize="90px"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/colorDrak"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="正常温度：低于37℃"
+            android:textColor="@color/quickening_text1"
+            android:layout_margin="38px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:paddingBottom="100px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="体温标准"
+                android:textSize="48px"
+                android:textColor="@color/quickening_text1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="℃"
+                android:textSize="36px"
+                android:textColor="@color/bloodsugarview_color3"/>
+
+        </LinearLayout>
+
+        <com.conagra.hardware.widget.TempleView1
+            android:id="@+id/temple2_view"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

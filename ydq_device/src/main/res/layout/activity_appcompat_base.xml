@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorMain">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/primary_text_size" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/rightBt"
+                    android:clickable="true"
+                    android:layout_width="80dp"
+                    android:layout_gravity="right"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="20dp"
+                    app:srcCompat="@drawable/time_ico"/>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mine_bg">
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/empty"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/no_data"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:text="暂无数据"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/error"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/server_error"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:text="网络异常"/>
+            </FrameLayout>
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

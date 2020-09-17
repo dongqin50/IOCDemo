@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bloodsugar_list_ll"
+    android:gravity="center"
+    android:layout_marginTop="3px"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_margin="20px"
+
+        android:src="@drawable/jkgj_jkgj_xt"/>
+
+    <LinearLayout
+        android:layout_width="470px"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bloodsugar_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-10-14 18:39:24"
+            android:textColor="@color/black"
+            android:textSize="44px"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/bloodsugar_list_state"
+                android:layout_marginTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="睡觉前"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+
+
+            <TextView
+                android:id="@+id/bloodsugar_list_xy_num"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.2"
+                android:textColor="@color/color_text1"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mmol"
+                android:textColor="@color/color_text1"
+                android:textSize="34px"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/bloodsugar_list_status"
+            android:layout_below="@+id/bloodsugar_list_jt"
+            android:layout_marginTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="脉压差增大"
+            android:layout_marginRight="20px"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPick"
+            android:textSize="38px"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</layout>

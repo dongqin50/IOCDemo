@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layout>
+<FrameLayout
+    android:id="@+id/bluetoothSearch_fl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain">
+
+
+    <ImageView
+        android:id="@+id/bluetoothSearch_line"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:src="@drawable/bluetooth_circle"/>
+
+    <ImageView
+        android:id="@+id/bluetoothSearch_bitmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ljsb_lylj"
+        android:padding="40px"/>
+
+</FrameLayout></layout>
